@@ -59,6 +59,10 @@ h3 {
   font-size: 1.7rem;
   margin: 0.5rem;
 }
+p {
+  margin: 0.5rem;
+  font-size: 2.4rem;
+}
 
 /*Screens larger than 1020 PX*/
 
@@ -369,16 +373,7 @@ a {
 } */
 
 /*Blocks*/
-@media screen and (min-width: 1024px) {
-  .images > img {
-    display: inline;
-    border: solid 3px #fff;
-    float: left;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-  }
-}
+
 .images {
   padding: 1rem;
 }
@@ -386,7 +381,7 @@ a {
   display: inline;
   border: solid 3px #fff;
   float: left;
-  border-radius: 50%;
+  border-radius: 25px;
   width: 50px;
   height: 50px;
 }
@@ -416,9 +411,31 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 300px;
-  height: 230px;
-  padding-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+}
+.cash {
+  display: inline;
+  font-size: 2.5rem;
+}
+.total {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.small-circle {
+  font-weight: 700;
+  background: #39795d;
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 10rem;
+  height: 10rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.small-circle2 {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 .block__heading {
@@ -435,7 +452,7 @@ a {
   color: #fff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -449,34 +466,8 @@ a {
   color: #fff;
 }
 
-/* FOR BIG SCREENS */
-.section_heading {
-  padding: 0;
-  font-weight: 600;
-  padding-top: 2rem;
-  font-size: 3.5rem;
-  color: #fff;
-}
-
-.section_body {
-  border-bottom: 2rem;
-  font-size: 2rem;
-  color: #fff;
-  border-bottom: solid 1px #fff;
-}
-.container {
-  flex-direction: column;
-  padding: 0.5rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
 @media screen and (min-width: 768px) {
   .container {
-    flex-direction: column;
     padding: 0.5rem;
     display: flex;
     flex-wrap: nowrap;
@@ -485,31 +476,8 @@ a {
     justify-content: center;
     padding: 1rem;
   }
-  .section_one,
-  .section_two,
-  .section_three {
-    display: block;
-    position: relative;
-    padding: 2.5rem;
-  }
-  .block__heading {
-    line-height: 1;
-    text-align: left;
-    color: #fff;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 6rem;
-    margin: 0;
-  }
-  .block__body {
-    text-align: left;
-    color: #fff;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 3rem;
-    margin: 0;
-  }
 }
+/* FOR BIG SCREENS */
 @media screen and (min-width: 1024px) {
   .container {
     position: relative;
@@ -522,17 +490,11 @@ a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  .section_one,
-  .section_two,
-  .section_three {
-    width: 33.7%;
-    display: block;
-    position: relative;
-    padding: 3rem;
-  }
+
   .block__heading {
     color: #fff;
-    font-size: 8rem;
+    font-size: 10rem;
+    font-size: 7rem;
     line-height: 1;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -543,12 +505,8 @@ a {
     text-align: left;
   }
   .block__body {
-    text-align: left;
-    color: #fff;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 3rem;
-    margin: 0;
+    font-size: 2rem;
+    margin-left: 1rem;
   }
   .cont {
     width: fit-content;
@@ -556,23 +514,11 @@ a {
     display: block;
     padding-right: 2rem;
   }
-  .section_heading {
-    font-weight: 600;
-    padding-top: 2rem;
-    color: #fff;
-  }
-  .section_body {
-    border-bottom: 2rem;
-    font-size: 3rem;
-    color: #fff;
-    border-bottom: solid 1px #fff;
-  }
 }
 /* section three */
 .section_one,
 .section_two,
 .section_three {
-  width: 100%;
   display: block;
   position: relative;
   padding: 2rem;
@@ -585,10 +531,25 @@ a {
 @media screen and (min-width: 768px) {
   .cont2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .last {
   }
 }
 
+.section_heading {
+  font-weight: 600;
+  padding-top: 2rem;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.section_body {
+  border-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+}
 .circle {
   border-radius: 50%;
   position: absolute;
@@ -611,16 +572,9 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .middle_image {
-    display: inline-block;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border: 33px solid black;
-    border-radius: 216px;
-    width: 570px;
-    height: 753px;
-
+    width: 365px;
+    height: 649px;
+    border-radius: 209px;
     border: 33px solid black;
   }
   .circle {
@@ -630,39 +584,35 @@ a {
     left: 313px;
   }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 728px) {
   .middle_image {
-    display: inline-block;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border: 33px solid black;
+    width: 365px;
+    height: 649px;
     border-radius: 209px;
-    width: 408px;
-    height: 641px;
   }
   .circle {
     width: 126px;
     height: 128px;
     top: 255px;
     left: 313px;
-  }
-  .section_heading {
-    font-weight: 700;
-    padding-top: 1rem;
-    font-size: 4rem;
-    color: #fff;
-  }
-  .section_body {
-    border-bottom: 2rem;
-    font-size: 2.5rem;
-    color: #fff;
-    border-bottom: solid 1px #fff;
   }
 }
 /*Wrappers*/
+
+.curved-text {
+  position: absolute;
+  top: 42px;
+  left: 12;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.curved-text span {
+  min-width: 0.5em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
 ::placeholder {
   font-size: 2rem;
@@ -673,162 +623,10 @@ a {
   position: relative;
   align-items: center;
   text-align: center;
-  border-radius: 118px;
+  border-radius: 70px;
   background: black;
   color: #fff;
   padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .cont2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .square-borderz {
-    justify-content: center;
-    border-radius: 10px;
-    width: 347px;
-    height: 465px;
-    border: 1px solid #fff;
-  }
-  .round-borderz {
-    justify-content: center;
-    border-radius: 120px;
-    width: 299px;
-    height: 437px;
-    border: 1px solid #fff;
-  }
-
-  .square-borderz {
-    justify-content: center;
-    border-radius: 10px;
-    width: 347px;
-    height: 465px;
-    border: 1px solid #fff;
-  }
-  .round-borderz {
-    justify-content: center;
-    border-radius: 120px;
-    width: 347px;
-    height: 465px;
-    border: 1px solid #fff;
-  }
-  .savings {
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 280px;
-    height: 139px;
-    padding-bottom: 1rem;
-  }
-  .cash {
-    display: inline;
-    font-size: 3rem;
-  }
-  .total {
-    font-size: 2rem;
-    font-weight: 700;
-    padding-bottom: 0.5rem;
-  }
-  .small-circle {
-    font-weight: 700;
-    background: #39795d;
-    font-size: 5rem;
-    padding: 0.5rem;
-    width: 200px;
-    height: 200px;
-    padding: 0.5rem 0.5rem;
-    border-radius: 50%;
-  }
-  .total {
-    font-size: 2rem;
-    font-weight: 700;
-    padding-bottom: 0.5rem;
-  }
-  .footer_text {
-    font-size: 4rem;
-    line-height: 1;
-  }
-}
-
-.cash {
-  display: inline;
-  font-size: 4rem;
-}
-.total {
-  font-size: 2rem;
-  font-weight: 700;
-  padding-bottom: 0.5rem;
-}
-.footer_text {
-  font-size: 5rem;
-  line-height: 1;
-}
-.small-circle {
-  font-weight: 700;
-  background: #39795d;
-  font-size: 3rem;
-  padding: 0.5rem;
-  width: 200px;
-  height: 200px;
-  padding: 0.5rem 0.5rem;
-  border-radius: 50%;
-}
-.small-circle2 {
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-@media screen and (min-width: 1024px) {
-  .cont2 {
-    display: flex;
-    flex-direction: row;
-  }
-  .square-borderz {
-    justify-content: center;
-    border-radius: 10px;
-    width: 347px;
-    height: 465px;
-    border: 1px solid #fff;
-  }
-  .round-borderz {
-    justify-content: center;
-    border-radius: 120px;
-    width: 347px;
-    height: 465px;
-    border: 1px solid #fff;
-  }
-  .savings {
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 280px;
-    height: 139px;
-    padding-bottom: 1rem;
-  }
-  .cash {
-    display: inline;
-    font-size: 4rem;
-  }
-  .total {
-    font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 0.5rem;
-  }
-  .small-circle {
-    font-weight: 700;
-    background: #39795d;
-    font-size: 5rem;
-    padding: 0.5rem;
-    width: 200px;
-    height: 200px;
-    padding: 0.5rem 0.5rem;
-    border-radius: 50%;
-  }
-
-  .footer_text {
-    font-size: 5rem;
-    line-height: 1;
-  }
 }
 
 .footer--black--square {
@@ -846,22 +644,22 @@ a {
 .square-borderz {
   justify-content: center;
   border-radius: 10px;
-  width: 309px;
-  height: 367px;
+  width: 17rem;
+  height: 25rem;
   border: 1px solid #fff;
 }
 .round-borderz {
   justify-content: center;
-  border-radius: 120px;
-  width: 299px;
-  height: 437px;
+  border-radius: 70px;
+  width: 17rem;
+  height: 25rem;
   border: 1px solid #fff;
 }
 .know--more {
   padding: 0;
   margin: 0;
   color: #ffc44f;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 .last {
   display: flex;
@@ -869,7 +667,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
-  flex-direction: row;
+  flex-direction: column;
 }
 .footer_container {
   display: flex;
@@ -892,16 +690,36 @@ a {
   margin: 0;
 }
 @media screen and (min-width: 1024px) {
-  .last {
-    padding: 2rem;
+  .footer_container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .footer-section-one,
+  .footer-section-two,
+  .footer-section-three {
+    font-size: 2.4rem;
+    display: block;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+  .last {
     flex-direction: row;
+    display: flex;
+
+    width: 100%;
   }
 }
 .last-text {
   font-size: 2rem;
 }
+
+
+/*# sourceMappingURL=/styles.b61e60ae.css.map */

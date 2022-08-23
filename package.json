@@ -1,0 +1,23 @@
+{
+  "name": "financialservices",
+  "version": "1.0.0",
+  "description": "This is a financial consulting website design extraxted and implemented from dribble https://dribbble.com/shots/19033600-Financial-Consulting-Website-Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mykfrost/financial-services.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mykfrost/financial-services/issues"
+  },
+  "homepage": "https://github.com/mykfrost/financial-services#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
