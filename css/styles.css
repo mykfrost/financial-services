@@ -184,13 +184,6 @@ a {
   text-decoration: none;
 }
 
-.link-arrow {
-  color: var(--color-accent);
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 /*icons*/
 .icon {
   width: 40px;
@@ -253,7 +246,7 @@ a {
 
 .btn--empire {
   background: rgb(235, 231, 231);
-  width: 10rem;
+  width: 9rem;
   height: 4rem;
   border-radius: 10px;
   margin-right: 1rem;
@@ -264,6 +257,7 @@ a {
   text-align: center;
   color: black;
   padding: 0.5rem;
+  margin-top: 1rem;
 }
 .accent {
   background: #39795d;
@@ -885,14 +879,32 @@ a {
 .footer-section-three {
   display: block;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   color: #fff;
   margin: 0;
 }
 @media screen and (min-width: 1024px) {
-  .last {
+  .last-left {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    padding-top: 2rem;
+    flex-direction: row;
+  }
+  .last-right {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    padding-top: 2rem;
+    flex-direction: row;
+  }
+  .last-center {
     padding: 2rem;
     display: flex;
     flex-wrap: nowrap;
